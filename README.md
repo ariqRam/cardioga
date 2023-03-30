@@ -67,6 +67,44 @@ If you explicitly want to download the model, you can download it from here:
 * [Movenet Thunder](https://tfhub.dev/google/movenet/singlepose/thunder/)
 * [Movenet MultiPose](https://tfhub.dev/google/movenet/multipose/lightning/)
 
+### Criteria (Impacts)
+* SDG Goal 3 with Target 3.8 - Achieve universal health coverage
+* Google Technologies utilized - Frontend: Figma, Backend: TensorFlow Lite + Android
+* Problem Statement - As one of the top causes of death among Malaysians, heart disease kills more people than road accidents. According to national statistics, 17 per cent of deaths in Malaysia are caused by ischemic heart disease. In Malaysia, the number of cardiovascular disease cases increases by 5 per cent every year, according to the National Heart Institute. There are 10,000 cases of cardiology and hypertension and 4,000 cases of heart surgery in one year. 
+* Aim - Our app aims to enhance your cardiovascular fitness with real-time AI-proctored yoga sessions. With our pose estimation model, precise yoga pose will make the best out of your fitness sessions. Users can customize their schedule for yoga sessions and get in touch with our practitioners for advises and galvanizations. A personalized statistics will be provided for users to keep track of their progress to possess the best care of their cardiovascular health.
+
+Promote yoga (holistic practice) to reduce risk of cardiovascular diseases with our app, you don’t need to prepare any budgets for equipment, places, fundamental, trained instructors & it is suitable for peoples from all ages and stages of life. (Coverage health and decrease the household expenditure). Yoga, a mind-body exercise involves a series of postures, breathing exercises, and meditation techniques designed to promote physical and mental well-being.
+Yoga is also a low impact activity as it is gentle to joint and muscle, which means this makes it a safe exercise for people including seniors and those with injuries or physical limitations or even pregnant.
+
+Physically: 
+        1.) Flexibility
+ 	      2.) Strength
+	      3.) Balance
+	      4.) Cardiovascular health
+
+Mentally: 
+        1.) Reduce stress
+	      2.) Improve concentration
+	      3.) Promote relaxation
+
+Spiritually: 
+        1.) self-realization
+	      2.) enlightenment
+        
+* Future and next steps of solutions:
+a.) Implements more AI models like GCP’s AutoML - alleviate the workloads of   practitioners when the number of users is increased.
+b.) Use a feedback loop – utilize and collect the real-time data to continuously improve the performance of our system like the accuracy of correcting the poses of users during the yoga sessions
+c.) Outbound collaborations with other organizations like Ministry of Health of Malaysia – to obtain more opinions for improvements and increases the population of target beneficiary
+d.) Escalate our application with more advanced and useful features – multi-languages, offline mode, premium services
+
+### Criteria (Technology)
+* Google Technologies used and reasons:
+a.)	Android: The implementation of Cardioga requires the use of a camera device. Android holds a share of over 71% of smartphones worldwide. This will make Cardioga accessible, thus can bring a healthy lifestyle to more people.
+b.)	TensorFlow Lite: TensorFlow is opensource and its lite version is easily portable and lightweight. Currently, Cardioga is expected to run on Android, but with the portability of TensorFlow Lite, it is easy to port Cardioga anywhere else. A custom IoT device might make the yoga experience easier, like a smart TV for better visual, or a smart watch for lighter access. The opensource nature of TensorFlow can leverage Cardioga by customizing its model and upgrading it under the supervision of health, heart, and yoga experts.
+
+* Code Testing and iteration
+One challenge faced is training the model on custom data set, and porting it back to the Android app. In order to address this challenge, we utilized the guide posted by Google Developers as a Collab notebook to train the model, and go through the 	example code posted on Pose Estimation tutorial by Google, to port the model back to the app.
+
 ### Additional Note
 _Please do not delete the assets folder content_. If you explicitly deleted the
  files, then please choose `Build` > `Rebuild` from menu to re-download the
